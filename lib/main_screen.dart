@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
+import 'menu1.dart';
+import 'menu2.dart';
+import 'menu3.dart';
+import 'input.dart';
+import 'output.dart';
+import 'processing.dart';
 import 'profil.dart';
 
 

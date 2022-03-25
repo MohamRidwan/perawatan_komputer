@@ -85,7 +85,7 @@ class proses extends StatelessWidget {
                     ),
                     Container(
                       width: 330,
-                      height: 2220,
+                      height: 4120,
                       decoration: BoxDecoration(
                           color: Colors.lightBlueAccent,
                           borderRadius: BorderRadius.circular(25)),
@@ -110,280 +110,350 @@ class proses extends StatelessWidget {
                                   fontStyle: FontStyle.italic),
                             ),
                           ),
-                          Padding(
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 290,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '1.  Usahakan tegangan listrik yang di suplay ke komputer dalam keadaan stabil. \n \n Tegangan listrik yang terlalu rendah atau tinggi dapat mempengaruhi/merusak perangkat keras pada komputer. \n \n Anda bisa gunakan UPS atau Stabilizer untuk menjaga agar hal tersebut tidak terjadi.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 730,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 1. MOTHERBOARD \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Motherboard.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Motherboard merupakan perangkat keras pada komputer yang berfungsi sebagai tempat memasang dan meletakkan perangkat seperti: prosessor, VGA, RAM, dan perangkat lain. Motherboard meurpakan komponen yang sangat penting pada komputer karena motherboard sebagai sirkuit utama yang akan menghubungkan semua peralatan pada komputer. Didalam motherboard terdiri dari komponen-komponen seperti:\n\n > Slot prosessor\n > Slot memori\n > Chipset motherboard\n > Slot PCI\n > Slot VGA\n > Port IDE maupun Port Sata\n > Baterai CMOS\n > komponen-komponen yang lain.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 400,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '2. Proses menghidupkan dan mematikan komputer harus sesuai prosedur pemakaian.Hindari mencabut langsung kabel power ketika komputer/laptop masih dalam keadaan menyala/beroperasi. \n \n Syarat ini berlaku juga untuk komputer dalam keadaan hang,sebaiknya tunggu hingga komputer  kembali normal dan tidak hang lagi,lalu dapat di matikan. \n \n Hal ini sangat berbahaya,di sarankan untuk di hindari sebab dapat merusak kestabilan bagi power suply komputer.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 550,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 2. POWER SUPPLY \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Power_Supply.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Power supply merupaka perangkat keras komputer yang berfungsi untuk merubah arus AC menjadi DC dan mensuplai tegangan ke komponen-komponen seperti motherboard, harddisk, CD Room, Floppy Disk, dan lain-lain. Pada power supply terdapat banyak port, setiap port memiliki fugsi yang berbeda-beda disesuaikan dengan perangkat yang akan disuplai oleh power supply. Power supply sendiri mempunyai  2 jenis yaitu: power supply AT dan power supply ATX.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 120,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '3. Hindarkan komputer dari sengatan matahari langsung,baik dalam keadaan menyala ataupun mati.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 520,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 3. CPU / PROSESOR \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/prosesor.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n CPU atau prosessor adalah komponen yang berfungsi sebagai otak komputer yang mengendalikan proses kerja komputer dengan dibantu oleh perangkat yang lain. Prosessor berbentuk segiempat yang dipasang pada slot prosessor pada motherboard. Contoh-contoh prosesor pada saat ini asalah: Intel Pentium 2, Pentium 3, Pentium 4, Intel Atom, Dual Core, Core i3, Core i5, Core i7 dan AMD.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 120,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '4. Jauhkan wadah air dan lain sebagainya,agar tercegah dari siraman air pada perangkat keras komputer.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 640,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 4. RAM \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/RAM.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Memori atau RAM berfungsi sebagai media penyimpanan pada komputer yang bersifat sementara sehingga setelah komputer dimatikan maka data yang ada pada memori RAM akan dihapus secara otomatis. RAM sangat mempengaruhi kecepatan akses sebuah komputer sehingga semakin besar kapasitas pada memori RAm maka semakin cepat pula kecepatan akses komputer. Ukuran kapasitas RAM yaitu: 128 Mb, 256 MB, 512 MB, 1 GB dan seterusnya. Jenis-jenis RAM juga sangat beragam sesuai dengan slot yang terdapat pada motherboard seperti: SDRAM, EDORAM, DDRAM, RDRAM.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 170,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '5. Hindarkan juga penempatan alat-alat yang memiliki unsur magnet dari dedakat komputer. \n\n Hal itu dapat mengacaukan monitor dan juga dapat merusak perangkat keras internal unit  CPU.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 450,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 5. HARDDISK \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Harddisk.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Harddisk adalah komponen perangkat keras komputer yang berfungsi untuk menyimpan data secara permanen. Harddisk mampun menyimpan data, program maupun aplikasi dengan kapasitas yang sangat besar. Jenis harddisk komputer ada 2 macam yaitu: harddisk SATA dan Harddisk PATA.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 125,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '6. Bersihkn bagian-bagian komputer secara berkala,dari debu dengan menggunakan kuas cat atau sikat gigi,lap halus,dan alat penyemprot udara normal.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 520,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 6. VGA \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/vga.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n VGA adalah perangkat keras komputer yang berfungsi untuk menghubungkan motherboard dengan monitor. VGA merupakan peralatan pemroses grafis sehingga semakin bagus VGA pada komputer maka semakin bagus pula gambar yang ditampilkan di layar monitor.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                            Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 185,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '7. Bersihkan keseluruhan mainbord dengan alat pompa udara untuk membersihkan debu.terutama pada bagian soket memori,sebab jika soket memori kotor dan berdebu,maka memori/RAM tidak akan dapat bekerja dengan maksimal.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 90,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '8. Bersihkan fan cooler CPU dan Heatsink menggunakan kuas halus dan alat pompa udara.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 90,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '9.Lepas memori RAM dengan hati-hati,lalu bersihkan menggunakan lap halus secara perlahan.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 105,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '10. Lepas power suply dan bersihkan dengan cara menyemprotkan udara melalui pentilasi udara power suply.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 80,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '11. Bersihkan semua port-port eksternal yang ada pada mainboard.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 100,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '12. Bagi yang menggunkan VGA Card ad on,lakukan pembersihan terutama pada heatsink dari debu.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 80,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '13. Lakukan juga pembersihan pada permukaan keyword dari debu.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                        ],
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 520,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 7. SOUNDCARD \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Sound_Card.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Soundcard  adalah perangkat keras pada komputer yang berfungsi untuk menerjemahkan data anolog dan digital. Soundcard digunakan untuk menghubungkan motherboard dengan peralatan input maupun output suara, seperti: sepeaker atau microfon.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),           
+                       ],
                       ),
                     ),
                   ],

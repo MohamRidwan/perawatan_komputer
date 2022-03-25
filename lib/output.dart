@@ -85,7 +85,7 @@ class Output extends StatelessWidget {
                     ),
                     Container(
                       width: 330,
-                      height: 2220,
+                      height: 3250,
                       decoration: BoxDecoration(
                           color: Colors.lightBlueAccent,
                           borderRadius: BorderRadius.circular(25)),
@@ -113,276 +113,299 @@ class Output extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 290,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '1.  Usahakan tegangan listrik yang di suplay ke komputer dalam keadaan stabil. \n \n Tegangan listrik yang terlalu rendah atau tinggi dapat mempengaruhi/merusak perangkat keras pada komputer. \n \n Anda bisa gunakan UPS atau Stabilizer untuk menjaga agar hal tersebut tidak terjadi.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 530,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 1. MONITOR \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/monitor1.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Macam perangkat output yang pertama dan sangat vital bagi komputer adalah monitor. Perangkat ini berfungsi untuk menampilkan data berupa teks, gambar, dan video. Monitor terdiri dari sirkuit, catu daya, tombol untuk menyesuaikan pengaturan layar, serta casing yang menampung semua komponen tersebut. Saat ini monitor diproduksi dalam bentuk yang tipis dan memiliki berbagai macam ukuran.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 400,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '2. Proses menghidupkan dan mematikan komputer harus sesuai prosedur pemakaian.Hindari mencabut langsung kabel power ketika komputer/laptop masih dalam keadaan menyala/beroperasi. \n \n Syarat ini berlaku juga untuk komputer dalam keadaan hang,sebaiknya tunggu hingga komputer  kembali normal dan tidak hang lagi,lalu dapat di matikan. \n \n Hal ini sangat berbahaya,di sarankan untuk di hindari sebab dapat merusak kestabilan bagi power suply komputer.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 530,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 2. PRINTER \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/printer.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Printer merupakan perangkat keras yang berfungsi untuk mengambil data elektronik yang tersimpan dalam komputer atau perangkat lain dan menghasilkan salinan data tersebut. Salinan data bisa berupa teks, gambar, maupun foto yang dicetak di atas kertas yang diselipkan pada wadah yang sudah disediakan. Printer memiliki beberapa tipe, tapi yang paling umum digunakan untuk komputer adalah tipe Laser dan InkJet.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 120,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '3. Hindarkan komputer dari sengatan matahari langsung,baik dalam keadaan menyala ataupun mati.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 570,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 3. PROYEKTOR \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Proyektor.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Proyektor adalah perangkat yang digunakan untuk mengambil gambar yang dihasilkan oleh komputer atau pemutar Blu-ray. Gambar tersebut kemudian ditampilkan pada permukaan datar di depannya, seperti layar atau dinding. \n\n Perangkat output komputer ini bisa digunakan untuk menampilkan gambar diam (slide) maupun gambar bergerak (video) pada layar besar sehingga bisa dinikmati oleh banyak orang sekaligus.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
+                          ),
+                         
+                          Padding(
+                            padding: EdgeInsets.only(top: 10),
+                          ),
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 510,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 4. HEADPHONE \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Headphone.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Headphone atau earphone merupakan perangkat yang menghasilkan suara untuk mendengarkan audio secara pribadi setelah dihubungkan pada speaker. Headphone dan earphone memiliki fungsi yang sama tapi bentuk yang berbeda. Headphone berbentuk besar dengan earpad yang menutup seluruh telinga, sedangkan earphone bentuknya kecil dan hanya menutupi lubang telinga saja.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 120,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '4. Jauhkan wadah air dan lain sebagainya,agar tercegah dari siraman air pada perangkat keras komputer.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 410,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 5. SPEAKER \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/speaker.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Speaker adalah perangkat yang terhubung pada komputer dan berfungsi sebagai penghasil suara. Sinyal yang digunakan untuk menghasilkan suara yang berasal dari speaker dibuat oleh kartu suara komputer.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
                           ),
                           Padding(
                             padding: EdgeInsets.only(top: 10),
                           ),
-                          Container(
-                            width: 310,
-                            height: 170,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '5. Hindarkan juga penempatan alat-alat yang memiliki unsur magnet dari dedakat komputer. \n\n Hal itu dapat mengacaukan monitor dan juga dapat merusak perangkat keras internal unit  CPU.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
+                          Column(
+                            children: [
+                              Container(
+                                width: 310,
+                                height: 520,
+                                alignment: Alignment.center,
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Column(children: [
+                                Container(
+                                      child: Text(
+                                    '\n 6. SOUND CARD \n',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  )),
+                                  Container(
+                                    height: 150,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/images/Sound_Card.jpg'),
+                                          fit: BoxFit.cover),
+                                    ),
+                                  ),
+                                  Container(
+                                      child: Text(
+                                    '\n Sound card atau kartu suara adalah kartu ekspansi yang berfungsi menghasilkan suara dari komputer sehingga dapat didengar melalui speaker atau headphone. Sebenarnya komputer tidak selalu membutuhkan sound card, tapi perangkat ini selalu disertakan pada setiap mesin dalam satu bentuk atau bentuk lainnya, baik dalam slot ekspansi atau terpasang pada motherboard.',
+                                    textAlign: TextAlign.justify,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                        fontStyle: FontStyle.italic),
+                                  ))
+                                ]),
+                              ),
+                            ],
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 125,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '6. Bersihkn bagian-bagian komputer secara berkala,dari debu dengan menggunakan kuas cat atau sikat gigi,lap halus,dan alat penyemprot udara normal.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 185,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '7. Bersihkan keseluruhan mainbord dengan alat pompa udara untuk membersihkan debu.terutama pada bagian soket memori,sebab jika soket memori kotor dan berdebu,maka memori/RAM tidak akan dapat bekerja dengan maksimal.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 90,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '8. Bersihkan fan cooler CPU dan Heatsink menggunakan kuas halus dan alat pompa udara.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 90,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '9.Lepas memori RAM dengan hati-hati,lalu bersihkan menggunakan lap halus secara perlahan.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 105,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '10. Lepas power suply dan bersihkan dengan cara menyemprotkan udara melalui pentilasi udara power suply.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 80,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '11. Bersihkan semua port-port eksternal yang ada pada mainboard.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 100,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '12. Bagi yang menggunkan VGA Card ad on,lakukan pembersihan terutama pada heatsink dari debu.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 10),
-                          ),
-                          Container(
-                            width: 310,
-                            height: 80,
-                            alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                            ),
-                            child: Text(
-                              '13. Lakukan juga pembersihan pada permukaan keyword dari debu.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ),
+                          
                         ],
                       ),
                     ),
